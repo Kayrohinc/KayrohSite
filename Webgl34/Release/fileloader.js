@@ -30,8 +30,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 9155573;
-      var PACKAGE_UUID = 'b6a4372b-bbed-41fa-8ad5-0fa4d278a93a';
+      var REMOTE_PACKAGE_SIZE = 9155837;
+      var PACKAGE_UUID = 'f83f1e58-eb10-4247-b5fa-ce66e2eea2a6';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -133,13 +133,13 @@ Module['FS_createPath']('/', 'Resources', true, true);
     };
 
       new DataRequest(0, 2978228, 0, 0).open('GET', '/level0');
-    new DataRequest(2978228, 3132848, 0, 0).open('GET', '/mainData');
-    new DataRequest(3132848, 3133413, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(3133413, 3669933, 0, 0).open('GET', '/sharedassets0.assets');
-    new DataRequest(3669933, 5317673, 0, 0).open('GET', '/sharedassets1.assets');
-    new DataRequest(5317673, 6745905, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(6745905, 8633289, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(8633289, 9155573, 0, 0).open('GET', '/Resources/unity_builtin_extra');
+    new DataRequest(2978228, 3133112, 0, 0).open('GET', '/mainData');
+    new DataRequest(3133112, 3133677, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(3133677, 3670197, 0, 0).open('GET', '/sharedassets0.assets');
+    new DataRequest(3670197, 5317937, 0, 0).open('GET', '/sharedassets1.assets');
+    new DataRequest(5317937, 6746169, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(6746169, 8633553, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(8633553, 9155837, 0, 0).open('GET', '/Resources/unity_builtin_extra');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
