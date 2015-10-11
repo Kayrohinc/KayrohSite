@@ -1,8 +1,9 @@
 <html><head>
     <script>
+     
       window.onload = function() {
          
-                window.location = 'bowlingbetatest://'+window.location.pathname;
+                window.location = 'bowlingbetatest://'+location.search.split('?')[1];
             
             }
     </script>
