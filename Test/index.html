@@ -1,10 +1,11 @@
 <html><head>
-   
     <script>
-    window.onload = function() {
- 
-        window.location = 'bowlingbetatest://';
-    
-    }
+      window.onload = function() {
+         
+                window.location = 'bowlingbetatest://?'+window.location.pathname.split( '?' )[1];
+            
+            }
     </script>
-</head><body></body></html>
+  </head><body>
+
+</body></html>
